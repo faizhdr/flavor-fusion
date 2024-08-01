@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        .avatar{
+            border-radius: 120px 120px 40px 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 6rem;
+            padding-bottom: 10px;
+            height: 200px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+    </style>
+    <!-- icon title -->
+    <link rel="icon" type="image/x-icon" href="/img/logo/logo.svg">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-white shadow-sm">
+        <div class="container">
+            <img src="img/logo/logo-image.svg" alt="logo-image">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class='bx bx-menu'></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text-center">
+            <div class="col-lg-6 mx-auto mt-5">
+                <img src="img/logo/logo-image.svg" class="mb-3" style="width: 30%;" alt="logo">
+                <p class="text-black-50 mb-4">Temukan inspirasi memasak, tips kuliner, dan panduan langkah demi langkah
+                    untuk membuat hidangan lezat di rumah. Mari bergabung dengan komunitas kami dan nikmati keajaiban
+                    rasa di setiap gigitan bersama Flavor Fusion.</p>
+            </div>
+        </div>
+        <hr class="mx-auto w-25">
+
+        <div class="text-center mt-5">
+            <h5>Develop By</h5>
+        </div>
+        <div class="col-lg-8 mx-auto mt-5">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 mb-5">
+                <div class="col text-center mb-5">
+                    <img src="img/avatar/avatar-1.svg" class="w-50 rounded-circle shadow-lg" style="margin-bottom: -70px;" alt="avatar 1">
+    
+                    <div class="avatar d-flex flex-column">
+                        <p class="mb-3 my-auto">VIRDANE AKBAR PANGESTU</p>
+                        <p class="text-black-50">230401010339</p>
+                    </div>
+                </div>
+                <div class="col text-center mb-5">
+
+                    <img src="img/avatar/avatar-2.svg" class="w-50 rounded-circle shadow-lg" style="margin-bottom: -70px;" alt="avatar 2">
+    
+                    <div class="avatar d-flex flex-column">
+                        <p class="mb-3 my-auto">FAIZ HAIDAR</p>
+                        <p class="text-black-50 mt-auto">230401010232</p>
+                    </div>
+                </div>
+                <div class="col text-center mb-5">
+
+                    <img src="img/avatar/avatar-3.svg" class="w-50 rounded-circle shadow-lg" style="margin-bottom: -70px;" alt="avatar 3">
+    
+                    <div class="avatar d-flex flex-column">
+                        <p class="mb-3">ATMADI ABRAM</p>
+                        <p class="text-black-50 mt-auto">230401020068</p>
+                    </div>
+                </div>
+                <div class="col text-center mb-5">
+
+                    <img src="img/avatar/avatar-4.svg" class="w-50 rounded-circle shadow-lg" style="margin-bottom: -70px;" alt="avatar 4">
+    
+                    <div class="avatar d-flex flex-column">
+                        <p class="mb-3">HANDIKA NUR ICHSAN</p>
+                        <p class="text-black-50 mt-auto">230401011003</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="py-3 mt-4 ">
+        <ul class="nav justify-content-center  container py-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="px-2 text-secondary">Home</a></li>
+            <li class="nav-item"><a href="blog.html" class="px-2 text-secondary">Blog</a></li>
+            <li class="nav-item"><a href="#" class="px-2 text-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-secondary">&copy; 2024 Kelompok 6, Inc</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

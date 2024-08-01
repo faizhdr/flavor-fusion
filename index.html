@@ -40,7 +40,6 @@
             border-radius: 120px 120px 40px 40px;
             padding-top: 10rem;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            ;
         }
     </style>
     <!-- Bootstrap -->
@@ -50,9 +49,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-white shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-md bg-white shadow-sm">
         <div class="container">
-            <img src="img/logo/logo-image.svg" loading="lazy" style="width: 10%;" alt="">
+            <img src="img/logo/logo-image.svg" alt="logo-image">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class='bx bx-menu'></i></span>
@@ -60,10 +59,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link text-success" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-success" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">About</a>
+                        <a class="nav-link text-dark" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="about.html">About</a>
                     </li>
                 </ul>
             </div>
@@ -72,30 +74,27 @@
 
     <div class="container">
         <!-- Hero Section -->
-        <div class="row flex-lg-row-reverse align-items-center g-5 my-5" data-aos="fade-up" data-aos-duration="1000">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="img/hero-image.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="500" loading="lazy">
+        <div class="row row-cols-1 row-cols-lg-2 mt-5 align-items-center" data-aos="fade-up"
+        data-aos-duration="1000">
+            <div class="col order-lg-2 order-2">
+                <h1 class="display-6 fw-bold text-success col-lg-12 col-md-12 col-9">Petualangan Rasa Dimulai di Sini</h1>
+                <p class="text-black-50">Flavor Fusion adalah destinasi utama Anda untuk menemukan berbagai resep makanan yang menggugah selera dan inovatif. Temukan inspirasi memasak, tips kuliner, dan panduan langkah demi langkah untuk membuat hidangan lezat di rumah.</p>
+                <a href="#toprecipe" class="btn btn-success btn-md rounded-pill px-4 me-md-2">Lihat Top Resep <i
+                        class='bx bx-chevron-right'></i></a>
             </div>
-            <div class="col-lg-6">
-                <h1 class="display-6 fw-bold text-success text-body-emphasis lh-1 mb-3">Petualangan Rasa Dimulai di Sini
-                </h1>
-                <p class="text-black-50">Flavor Fusion selalu berinovasi untuk menghadirkan rasa-rasa baru yang
-                    menggugah selera. Kami percaya bahwa setiap gigitan harus menjadi petualangan rasa yang menyenangkan
-                    dan memuaskan. Nikmati perpaduan unik dari resep yang kami berikan untuk hasil yang sempurna.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="#toprecipe"  class="btn btn-success btn-md rounded-pill px-4 me-md-2">Lihat Top Resep <i
-                            class='bx bx-chevron-right'></i></a>
-                </div>
+            <div class="col order-lg-2 order-1">
+                <img data-src="img/hero-image.png" class="lazy d-block mx-lg-auto img-fluid" alt="food-image" width="500"
+                    height="300">
             </div>
         </div>
 
+
         <!-- Featured -->
         <h3 class="text-center mt-5 pt-5 mb-5">Menyatukan Cita Rasa</h3>
-        <div class="row g-5 row-cols-1 row-cols-lg-3 mb-5" data-aos="fade-up" data-aos-duration="1000">
-            <div class="col text-center">
+        <div class="row row-cols-1 row-cols-lg-3 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col text-center mb-5">
 
-                <img src="img/spices-1.png" class="w-50 rounded-circle" style="margin-bottom: -130px;" alt="featured 1">
+                <img data-src="img/spices-1.png" class="lazy w-50 rounded-circle" style="margin-bottom: -130px;" alt="featured 1">
 
                 <div class="featured pb-3 px-5">
                     <h4 class="mb-3">Menyatukan Beragam Rasa</h4>
@@ -103,9 +102,9 @@
                         terbaik.</p>
                 </div>
             </div>
-            <div class="col text-center">
+            <div class="col text-center mb-5">
 
-                <img src="img/spices-2.png" class="w-50 rounded-circle" style="margin-bottom: -130px;" alt="featured 1">
+                <img data-src="img/spices-2.png" class="lazy w-50 rounded-circle" style="margin-bottom: -130px;" alt="featured 1">
 
                 <div class="featured pb-3 px-5">
                     <h4 class="mb-3">Rasa yang Menginspirasi</h4>
@@ -113,9 +112,9 @@
                         tetapi juga menginspirasi.</p>
                 </div>
             </div>
-            <div class="col text-center">
+            <div class="col text-center mb-5">
 
-                <img src="img/spices-3.png" class="w-50 rounded-circle" style="margin-bottom: -130px;" alt="featured 1">
+                <img data-src="img/spices-3.png" class="lazy w-50 rounded-circle" style="margin-bottom: -130px;" alt="featured 1">
 
                 <div class="featured pb-3 px-5">
                     <h4 class="mb-3">Perpaduan Bahan Sempurna</h4>
@@ -127,15 +126,16 @@
 
         <!-- Top Recipes -->
         <h3 class="mt-5 pt-5">Top Recipes</h3>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-5" id="toprecipe" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-5" id="toprecipe" data-aos="fade-up"
+            data-aos-duration="1000">
             <div class="col mt-5">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal1">
-                    <img src="img/sup-telur.png" class="card-img-top" alt="sup-telur">
+                    <img data-src="img/sup-telur.png" class="lazy card-img-top" alt="sup-telur">
                     <div class="card-body d-flex flex-column">
                         <p class="card-text">Resep Sup Telur Simple Cuma 3 Bahan | Easy Egg Drop Soup Recipe</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div>
-                                <img class="rounded-pill w-50" src="img/channel/pura-kitchen.jpg" alt="pura Kitchen">
+                                <img class="lazy rounded-pill w-50" data-src="img/channel/pura-kitchen.jpg" alt="pura Kitchen">
                             </div>
                             <div>
                                 <span style="margin-left: -15px;">Pura Kitchen</span>
@@ -155,8 +155,8 @@
                         </div>
                         <div class="modal-body">
                             <div class="h_iframe">
-                                <iframe class="video-iframe"
-                                    src="https://www.youtube.com/embed/3Rata1jRgKY?si=iVNLmv8xbfUgwJ9v"
+                                <iframe class="video-iframe lazy"
+                                    data-src="https://www.youtube.com/embed/3Rata1jRgKY?si=iVNLmv8xbfUgwJ9v"
                                     title="Resep Sup Telur Simple Cuma 3 Bahan" allowfullscreen></iframe>
                             </div>
                             <div class="mt-3">
@@ -198,16 +198,16 @@
             <!-- Card 2 -->
             <div class="col mt-5">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal2">
-                    <img src="img/nasi-goreng.png" class="card-img-top" alt="Nasi goreng">
+                    <img data-src="img/nasi-goreng.png" class="lazy card-img-top" alt="Nasi goreng">
                     <div class="card-body d-flex flex-column">
                         <p class="card-text">Resep Nasi Goreng Ala Restoran Solaria</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div>
-                                <img class="rounded-pill w-50" src="img/channel/devina-hermawan.jpg"
+                                <img class="lazy rounded-pill w-50" data-src="img/channel/devina-hermawan.jpg"
                                     alt="devina hermawan">
                             </div>
                             <div>
-                                <span style="margin-left: -15px;">Devina Hermawan</span>
+                                <span style="margin-left: -15px;"> Devina Hermawan</span>
                             </div>
                         </div>
                     </div>
@@ -224,8 +224,8 @@
                         </div>
                         <div class="modal-body">
                             <div class="h_iframe">
-                                <iframe class="video-iframe"
-                                    src="https://www.youtube.com/embed/Js9FXCkn798?si=iuMl_LbRM5sbj48o"
+                                <iframe class="video-iframe lazy"
+                                    data-src="https://www.youtube.com/embed/Js9FXCkn798?si=iuMl_LbRM5sbj48o"
                                     title="Resep Nasi Goreng Ala Restoran Solaria" allowfullscreen></iframe>
                             </div>
                             <div class="mt-3">
@@ -270,12 +270,12 @@
             <!-- Card 3 -->
             <div class="col mt-5">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal3">
-                    <img src="img/churos-coklat.png" class="card-img-top" alt="churos-coklat">
+                    <img data-src="img/churos-coklat.png" class="lazy card-img-top" alt="churos-coklat">
                     <div class="card-body d-flex flex-column">
                         <p class="card-text">Resep churros untuk ide jualan - renyah di luar lembut di dalam</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div>
-                                <img class="rounded-pill w-50" src="img/channel/dapurumi.jpg" alt="devina hermawan">
+                                <img class="lazy rounded-pill w-50" data-src="img/channel/dapurumi.jpg" alt="devina hermawan">
                             </div>
                             <div>
                                 <span style="margin-left: -15px;">dapurumi</span>
@@ -296,8 +296,8 @@
                         </div>
                         <div class="modal-body">
                             <div class="h_iframe">
-                                <iframe class="video-iframe"
-                                    src="https://www.youtube.com/embed/MwHNcx4Dphs?si=PbGz1SBOd2dBI3pN"
+                                <iframe class="video-iframe lazy"
+                                    data-src="https://www.youtube.com/embed/MwHNcx4Dphs?si=PbGz1SBOd2dBI3pN"
                                     title="Resep churros untuk ide jualan - renyah di luar lembut di dalam"
                                     allowfullscreen></iframe>
                             </div>
@@ -337,12 +337,12 @@
             <!-- Card 4 -->
             <div class="col mt-5">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal4">
-                    <img src="img/roti-telur.png" class="card-img-top" alt="roti-telur">
+                    <img data-src="img/roti-telur.png" class="lazy card-img-top" alt="roti-telur">
                     <div class="card-body d-flex flex-column">
                         <p class="card-text">Resep Telur Lembut Halus di Roti Bawang Putih Renyah!!</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div>
-                                <img class="rounded-pill w-50" src="img/channel/cooking-haru.jpg" alt="devina hermawan">
+                                <img class="lazy rounded-pill w-50" data-src="img/channel/cooking-haru.jpg" alt="devina hermawan">
                             </div>
                             <div>
                                 <span style="margin-left: -15px;">쿠킹하루 Cooking Haru</span>
@@ -363,8 +363,8 @@
                         </div>
                         <div class="modal-body">
                             <div class="h_iframe">
-                                <iframe class="video-iframe"
-                                    src="https://www.youtube.com/embed/tyBkdp89ZHA?si=4l0pprPobiPXUebP"
+                                <iframe class="video-iframe lazy"
+                                    data-src="https://www.youtube.com/embed/tyBkdp89ZHA?si=4l0pprPobiPXUebP"
                                     title="Resep Telur Lembut Halus di Roti Bawang Putih Renyah!!"
                                     allowfullscreen></iframe>
                             </div>
@@ -394,12 +394,12 @@
             <!-- Card 5 -->
             <div class="col mt-5">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal5">
-                    <img src="img/kentang-goreng.png" class="card-img-top" alt="kentang-goreng">
+                    <img data-src="img/kentang-goreng.png" class="lazy card-img-top" alt="kentang-goreng">
                     <div class="card-body d-flex flex-column">
                         <p class="card-text">Kentang Goreng Saus Keju Resep - Potato Fries&Cheese Sauce at Home</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div>
-                                <img class="rounded-pill w-50" src="img/channel/nino-home.jpg" alt="nino-home">
+                                <img class="lazy rounded-pill w-50" data-src="img/channel/nino-home.jpg" alt="nino-home">
                             </div>
                             <div>
                                 <span style="margin-left: -15px;">Nino's Home</span>
@@ -420,8 +420,8 @@
                         </div>
                         <div class="modal-body">
                             <div class="h_iframe">
-                                <iframe class="video-iframe"
-                                    src="https://www.youtube.com/embed/-E_O2PwZpCc?si=DO80BMJTtXkOOUxy"
+                                <iframe class="video-iframe lazy"
+                                    data-src="https://www.youtube.com/embed/-E_O2PwZpCc?si=DO80BMJTtXkOOUxy"
                                     title="Kentang Goreng Saus Keju Resep - Potato Fries&Cheese Sauce at Home"
                                     allowfullscreen></iframe>
                             </div>
@@ -462,12 +462,13 @@
             <!-- Card 6 -->
             <div class="col mt-5">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal6">
-                    <img src="img/ayam-terbaik.png" class="card-img-top" alt="ayam-terbaik">
+                    <img data-src="img/ayam-terbaik.png" class="lazy card-img-top" alt="ayam-terbaik">
                     <div class="card-body d-flex flex-column">
                         <p class="card-text">RESEP AYAM TERBAIK‼️ Ga pernah bosan masak ini | Ide menu ramadhan</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div>
-                                <img class="rounded-pill w-50" src="img/channel/cheche-kitchen.jpg" alt="cheche-kitchen">
+                                <img class="lazy rounded-pill w-50" data-src="img/channel/cheche-kitchen.jpg"
+                                    alt="cheche-kitchen">
                             </div>
                             <div>
                                 <span style="margin-left: -15px;">CHECHE KITCHEN</span>
@@ -482,13 +483,14 @@
                 <div class="modal-dialog modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">RESEP AYAM TERBAIK‼️ Ga pernah bosan masak ini | Ide menu ramadhan</h5>
+                            <h5 class="modal-title" id="staticBackdropLabel">RESEP AYAM TERBAIK‼️ Ga pernah bosan masak
+                                ini | Ide menu ramadhan</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="h_iframe">
-                                <iframe class="video-iframe"
-                                    src="https://www.youtube.com/embed/FBdmvdznav4?si=OO_eBbk_iNf0_zjn"
+                                <iframe class="video-iframe lazy"
+                                    data-src="https://www.youtube.com/embed/FBdmvdznav4?si=OO_eBbk_iNf0_zjn"
                                     title="RESEP AYAM TERBAIK‼️ Ga pernah bosan masak ini | Ide menu ramadhan"
                                     allowfullscreen></iframe>
                             </div>
@@ -530,12 +532,13 @@
             <!-- Card 7 -->
             <div class="col mt-5">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal7">
-                    <img src="img/ayam-bakar.png" class="card-img-top" alt="ayam-bakar">
+                    <img data-src="img/ayam-bakar.png" class="lazy card-img-top" alt="ayam-bakar">
                     <div class="card-body d-flex flex-column">
                         <p class="card-text">Saking simple dan enaknya, resep ayam bakar fillet!!</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div>
-                                <img class="rounded-pill w-50" src="img/channel/dapur-bunda-evi.jpg" alt="dapur-bunda-evi">
+                                <img class="lazy rounded-pill w-50" data-src="img/channel/dapur-bunda-evi.jpg"
+                                    alt="dapur-bunda-evi">
                             </div>
                             <div>
                                 <span style="margin-left: -15px;">Dapur Bunda Evi</span>
@@ -550,13 +553,14 @@
                 <div class="modal-dialog modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Saking simple dan enaknya, resep ayam bakar fillet!!</h5>
+                            <h5 class="modal-title" id="staticBackdropLabel">Saking simple dan enaknya, resep ayam bakar
+                                fillet!!</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="h_iframe">
-                                <iframe class="video-iframe"
-                                    src="https://www.youtube.com/embed/VJhh9Von8m8?si=CcYnw4jKR0NQwKzp"
+                                <iframe class="video-iframe lazy"
+                                    data-src="https://www.youtube.com/embed/VJhh9Von8m8?si=CcYnw4jKR0NQwKzp"
                                     title="Saking simple dan enaknya, resep ayam bakar fillet!!"
                                     allowfullscreen></iframe>
                             </div>
@@ -571,7 +575,7 @@
                                     <li>1 siung bawang putih</li>
                                     <li>Sedikir jahe</li>
                                     <li>Lada</li>
-                                    <li>1 Sendok makan saus tiram </li>                                    
+                                    <li>1 Sendok makan saus tiram </li>
                                 </ul>
 
                                 <h6>SAUS BAKAR</h6>
@@ -597,12 +601,12 @@
             <!-- Card 8 -->
             <div class="col mt-5">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modal8">
-                    <img src="img/dorayaki.png" class="card-img-top" alt="dorayaki">
+                    <img data-src="img/dorayaki.png" class="lazy card-img-top" alt="dorayaki">
                     <div class="card-body d-flex flex-column">
                         <p class="card-text">Resep Dorayaki super lembut dan enak - lebih irit & mudah</p>
                         <div class="d-flex align-items-center mt-auto">
                             <div>
-                                <img class="rounded-pill w-50" src="img/channel/danielicious.jpg" alt="danielicious">
+                                <img class="lazy rounded-pill w-50" data-src="img/channel/danielicious.jpg" alt="danielicious">
                             </div>
                             <div>
                                 <span style="margin-left: -15px;">Danielicious</span>
@@ -617,13 +621,14 @@
                 <div class="modal-dialog modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Resep Dorayaki super lembut dan enak - lebih irit & mudah</h5>
+                            <h5 class="modal-title" id="staticBackdropLabel">Resep Dorayaki super lembut dan enak -
+                                lebih irit & mudah</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="h_iframe">
-                                <iframe class="video-iframe"
-                                    src="https://www.youtube.com/embed/qbsFk4EOkwU?si=rp-qMiqdtS3dQjcD"
+                                <iframe class="video-iframe lazy"
+                                    data-src="https://www.youtube.com/embed/qbsFk4EOkwU?si=rp-qMiqdtS3dQjcD"
                                     title="Resep Dorayaki super lembut dan enak - lebih irit & mudah"
                                     allowfullscreen></iframe>
                             </div>
@@ -661,7 +666,8 @@
         </div>
         <ul class="nav justify-content-center  container border-secondary border-top border-bottom py-3 mb-3">
             <li class="nav-item"><a href="#" class="px-2 text-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="px-2 text-secondary">About</a></li>
+            <li class="nav-item"><a href="blog.html" class="px-2 text-secondary">Blog</a></li>
+            <li class="nav-item"><a href="about.html" class="px-2 text-secondary">About</a></li>
         </ul>
         <p class="text-center text-secondary">&copy; 2024 Kelompok 6, Inc</p>
     </footer>
@@ -681,10 +687,17 @@
             });
         });
     </script>
+    <!-- Lazy load image -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+    <script>
+        const myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+        });
+    </script>
     <!-- Animation on Scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 
